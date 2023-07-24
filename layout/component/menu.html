@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Download and install Zabbix</title>
+        <link rel="stylesheet" href="../../style/style.css">
+        <link rel="stylesheet" href="../../fontawesome-free-6.4.0-web/css/all.css">
+        <link rel="shortcut-icon" type ="image/x-icon" href="https://assets.zabbix.com/img/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="../jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".fa-bars").click(function(){
+                    $(this).hide()
+                    $(".fa-x").show()
+                    $(".menu_phone").slideDown()
+                })
+
+                $(".fa-x").click(function(){
+                    $(this).hide()
+                    $(".fa-bars").show()
+                    $(".menu_phone").slideUp()
+                })
+
+                $(window).scroll(function(){
+                    if($(document).scrollTop() > 100){
+                        $("#up").fadeIn()
+                        $("#up").animate({bottom:"50px"},150,"swing")
+                    }
+                    else{
+                        $("#up").animate({bottom:"-50px"},150,"swing")
+                        $("#up").fadeOut()
+                    }
+                })
+
+                $("#up").click(function(){
+                    window.scrollTo({top:0,behavior:'smooth'})
+                })
+
+                $(".oneinput input").click(function(){
+                    $(".oneinput input").css("background","white")
+                    $(".oneinput input").css("color","black")
+                })
+
+                $(".oneinput input").mouseleave(function(){
+                    $(".oneinput input").css("background","#454951")
+                    $(".oneinput input").css("color","white")
+                })
+
+            })
+        </script>
+    </head>
+    <body>
+        <div id = "menu">
+            <div class ="center">
+                <ul class = "menu">
+                    <li><a><img src ="https://upload.wikimedia.org/wikipedia/commons/6/6f/Zabbix_logo.svg" style = "width:auto; height:35px;"></a></li>
+                    <li class ="sublist">
+                        <li class ="hover"><a>PRODUCT</a></li>
+                        <li class ="hover"><a>SOLUTIONS</a></li>
+                        <li class ="hover"><a>SUPPORT & SERVICES</a></li>
+                        <li class ="hover"><a>TRAINING</a></li>
+                        <li class ="hover"><a>PARTNERS</a></li>
+                        <li class ="hover"><a>COMMUNITY</a></li>
+                        <li class ="hover"><a>ABOUT US</a></li>
+                    </li>
+                    <li class ="green hover_greenbutton"><a class ="greenbutton">DOWNLOAD</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

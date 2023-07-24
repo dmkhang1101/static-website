@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Download and install Zabbix</title>
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.css">
+        <link rel="shortcut-icon" type ="image/x-icon" href="https://assets.zabbix.com/img/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".fa-bars").click(function(){
+                    $(this).hide()
+                    $(".fa-x").show()
+                    $(".menu_phone").slideDown()
+                })
+
+                $(".fa-x").click(function(){
+                    $(this).hide()
+                    $(".fa-bars").show()
+                    $(".menu_phone").slideUp()
+                })
+
+                $(window).scroll(function(){
+                    if($(document).scrollTop() > 100){
+                        $("#up").fadeIn()
+                        $("#up").animate({bottom:"50px"},150,"swing")
+                    }
+                    else{
+                        $("#up").animate({bottom:"-50px"},150,"swing")
+                        $("#up").fadeOut()
+                    }
+                })
+
+                $("#up").click(function(){
+                    window.scrollTo({top:0,behavior:'smooth'})
+                })
+
+                $(".oneinput input").click(function(){
+                    $(".oneinput input").css("background","white")
+                    $(".oneinput input").css("color","black")
+                })
+
+                $(".oneinput input").mouseleave(function(){
+                    $(".oneinput input").css("background","#454951")
+                    $(".oneinput input").css("color","white")
+                })
+
+            })
+        </script>
+    </head>
+    <body>
+
+        <div id = "header_phone">
+            <div class = "center">
+                <ul class ="header_phone">
+                    <li><a><img src ="https://upload.wikimedia.org/wikipedia/commons/6/6f/Zabbix_logo.svg" style = "width:auto; height:35px;"></a></li>
+                    <li><a>
+                        <i class="fa-regular fa-bars fa-2xl" style="color: #000000; display:block;"></i>
+                        <i class="fa-regular fa-x fa-2xl" style="color: #000000; display: none"></i>
+                    </a></li>
+                </ul>
+
+                <div class = "menu_phone">
+                    <div>
+                        <ul class = "menu_list">
+                            <li><a class = "hover_menu_list" style ="border-top : 0.7px rgba(255, 255, 255, 0.552) solid">PRODUCT <i class="fa-sharp fa-solid fa-caret-down fa-lg" style="color: #ffffff;"></i></a></li>
+                            <li><a class = "hover_menu_list">SOLUTIONS <i class="fa-sharp fa-solid fa-caret-down fa-lg" style="color: #ffffff;"></i></a></li>
+                            <li><a class = "hover_menu_list">SUPPORT & SERVICES <i class="fa-sharp fa-solid fa-caret-down fa-lg" style="color: #ffffff;"></i></a></li>
+                            <li><a class = "hover_menu_list">TRAINING <i class="fa-sharp fa-solid fa-caret-down fa-lg" style="color: #ffffff;"></i></a></li>
+                            <li><a class = "hover_menu_list">PARTNERS <i class="fa-sharp fa-solid fa-caret-down fa-lg" style="color: #ffffff;"></i></a></li>
+                            <li><a class = "hover_menu_list">COMMUNITY <i class="fa-sharp fa-solid fa-caret-down fa-lg" style="color: #ffffff;"></i></a></li>
+                            <li><a class = "hover_menu_list">ABOUT US <i class="fa-sharp fa-solid fa-caret-down fa-lg" style="color: #ffffff;"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class = "green_button_phone hover_greenbutton">Download</div>
+                    </div>
+
+                    <div>
+                        <div class = "text_phone">
+                            <div>Zabbix 6.4 is out!</div>
+                            <div class = "hover_blue_text">Blog</div>
+                            <div class = "hover_blue_text">Documentation</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <ul class = "customer_phone">
+                            <li><a class = "hover_blue_text" style ="border-top : 0.7px rgba(255, 255, 255, 0.552) solid">English (US)<i class="fa-regular fa-chevron-down" style="color: #ffffff; padding:0 5px 0 5px; line-height:0.5cm"></i></a></li>
+                            <li><a class = "hover_blue_text">Customer Login <i class="fa-solid fa-circle-user" style = "padding:0 5px 0 5px; line-height:0.5cm"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id = "header">
+            <div class ="center">
+                <ul class ="header">
+                    <li><a class = "redtext hover_underline_red">Zabbix 6.4 is out!</a></li>
+                    <li><a class = "hover_underline_black">Blog</a></li>
+                    <li><a class = "hover_underline_black">Documentation</a></li>
+                    <li><a class = "hover_underline_black">English(US)</a></li><i class="fa-regular fa-chevron-down" style ="color:#6c6b6f"></i>
+                    <li><a class = "hover_underline_black">Customer Login</a></li><br><i class="fa-solid fa-user"></i>
+                </ul>
+            </div>
+        </div>
+
+        <div id = "menu">
+            <div class ="center">
+                <ul class = "menu">
+                    <li><a><img src ="https://upload.wikimedia.org/wikipedia/commons/6/6f/Zabbix_logo.svg" style = "width:auto; height:35px;"></a></li>
+                    <li class ="sublist">
+                        <li class ="hover"><a>PRODUCT</a></li>
+                        <li class ="hover"><a>SOLUTIONS</a></li>
+                        <li class ="hover"><a>SUPPORT & SERVICES</a></li>
+                        <li class ="hover"><a>TRAINING</a></li>
+                        <li class ="hover"><a>PARTNERS</a></li>
+                        <li class ="hover"><a>COMMUNITY</a></li>
+                        <li class ="hover"><a>ABOUT US</a></li>
+                    </li>
+                    <li class ="green hover_greenbutton"><a class ="greenbutton">DOWNLOAD</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id = "maincontent">
+            <div class = "center">
+
+                <button id="up" class = "hover_up" title="Go to top" style = "display:none" ><i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i></button>
+
+                <div class = "directory">
+                    <ul class ="content">
+                        <li><a class = "hover_underline">Home</a></li>
+                        <li>/</li>
+                        <li><a class = "hover_underline">Product</a></li>
+                        <li>/</li>
+                    </ul>
+                </div>
+
+                <div class = "maintitle">
+                    <h1>Download and install Zabbix</h1>
+                </div>
+
+                <div class = "square_boxes">
+                    <ul class = "square">
+                        <li><a class = "chosen">Zabbix Packages</a></li>
+                        <li><a class = "hover_box">Zabbix Cloud Images</a></li>
+                        <li><a class = "hover_box">Zabbix Container</a></li>
+                        <li><a class = "hover_box">Zabbix Appliance</a></li>
+                        <li><a class = "hover_box">Zabbix Sources</a></li>
+                        <li><a class = "hover_box">Zabbix Agents</a></li>
+                    </ul>
+                </div>
+
+                <div class = "Section">
+                    <div>
+                        <span class ="number">1</span>
+                        <span class ="title">Choose your platform</span>
+                        <div class ="box">
+                            <ul class = "platform">
+                                <li>
+                                    <ul class = "version">
+                                        <li><a class ="top">ZABBIX VERSION</a></li>
+                                        <li><a class ="sublist" style ="background-color :#b3d5e9">6.4</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">6.0 LTS</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">5.0 LTS</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">4.0 LTS</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">7.0 PRE-RELEASE</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class = "version">
+                                        <li><a class = "top">OS DISTRIBUTION</a></li>
+                                        <li><a class ="sublist" style ="background-color :#b3d5e9">Alma Linux</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">CentOS</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">Debian</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">Oracle Linux</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">Raspberry Pi Os</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">Red Hat Enterprise Linux</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">Rocky Linux</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">SUSE Linux Enterprise Server</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">Ubuntu</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">Ubuntu (arm64)</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class = "version">
+                                        <li><a class = "top">OS VERSION</a></li>
+                                        <li><a class ="sublist" style ="background-color :#b3d5e9">9</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">8</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class = "version">
+                                        <li><a class ="top">ZABBIX COMPONENT</a></li>
+                                        <li><a class ="sublist" style ="background-color :#b3d5e9">Server, Frontend, Agent</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">Proxy</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">Agent</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">Agent 2</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">Java Gateway</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">Web Service</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class = "version">
+                                        <li><a class = "top">DATABASE<i class="fa-solid fa-comment-question" style="color: #aaaaaa;"></i></a></li>
+                                        <li><a class ="sublist" style ="background-color :#b3d5e9">MySQL</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">PostgreSQL</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class = "version">
+                                        <li><a class = "top">WEB SERVER</a></li>
+                                        <li><a class ="sublist" style ="background-color :#b3d5e9">Apache</a></li>
+                                        <li class = "hover_platform"><a class ="sublist">Nginx</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class = "release-notes hover_underline">Release Notes 6.4</span>
+                    </div>
+                </div>
+
+                <div class = "Section">
+                    <div class = "instruction">
+                        <span class = "number">2</span>
+                        <span class = "title">Install and configure Zabbix for your platform</span>
+                        <h3>
+                            <span class = "subtitle">a. Install Zabbix repository</span>
+                            <span class = "documentation hover_underline">Documentation</span>
+                        </h3>
+                        <p>Disable Zabbix packages provided by EPEL, if you have it installed. Edit file /etc/yum.repos.d/epel.repo and add the following statement.</p>
+                        <div class ="code">
+                            <div>[epel]</div>
+                            <div>...</div>
+                            <div>excludepkgs=zabbix*</div>
+                        </div>
+                        <p>Proceed with installing zabbix repository</p>
+                        <div class ="code">
+                            <div># rpm -Uvh https://repo.zabbix.com/zabbix/6.4/rhel/9/x86_64/zabbix-release-6.4-1.el9.noarch.rpm</div>
+                            <div># dnf clear all</div>
+                        </div>
+                        <h3>
+                            <span class = "subtitle">b. Install Zabbix server, frontend, agent</span>
+                        </h3>
+                        <div class ="code">
+                            <div># dnf install zabbix-server-mysql zabbix-web-mysql zabbix-apache-conf zabbix-sql-scripts zabbix-selinux-policy zabbix-agent</div>
+                        </div>
+                        <h3>
+                            <span class = "subtitle">c. Create initial database</span>
+                            <span class = "documentation hover_underline">Documentation</span>
+                        </h3>
+                        <p>Make sure you have database server up and running.</p>
+                        <p>Run the following on your database.</p>
+                        <div class="code">
+                            <div># mysql -uroot -p</div>
+                            <div style = "color: rgb(255, 40, 40)">password</div>
+                            <div>mysql> create database zabbix character set utf8mb4 collate utf8mb4_bin;</div>
+                            <div>mysql> create user zabbix@localhost identified by 'password';</div>
+                            <div>mysql> grant all privileges on zabbix.* to zabbix@localhost;</div>
+                            <div>mysql> set global log_bin_trust_function_creators = 1;</div>
+                            <div>mysql> quit;</div>
+                        </div>
+                        <p>On Zabbix server host import initial schema and data. You will be prompted to enter your newly created password.</p>
+                        <div class = "code">
+                            <div># zcat /usr/share/zabbix-sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix</div>
+                        </div>
+                        <p>Disable log_bin_trust_function_creators option after importing database schema</p>
+                        <div class = "code">
+                            <div># mysql -uroot -p</div>
+                            <div style = "color: rgb(255, 40, 40)">password</div>
+                            <div>mysql> set global log_bin_trust_function_creators = 0;</div>
+                            <div>mysql> quit;</div>
+                        </div>
+                        <h3>
+                            <span class = "subtitle">d. Configure the database for Zabbix Server</span>
+                        </h3>
+                        <p>Edit file /etc/zabbix/zabbix_server.conf</p>
+                        <div class = "code">
+                            <div>DBPassword=<span style = "color: rgb(255, 40, 40)">password</span></div>
+                        </div>
+                        <h3>
+                            <span class = "subtitle">e. Start Zabbix server and agent processes</span>
+                        </h3>
+                        <p>Start Zabbix server and agent processes and make it start at system boot.</p>
+                        <div class = "code">
+                            <div># systemctl restart zabbix-server zabbix-agent httpd php-fpm</div>
+                            <div># systemctl enable zabbix-server zabbix-agent httpd php-fpm</div>
+                        </div>
+                        <h3>
+                            <span class = "subtitle">f. Open Zabbix UI web page</span>
+                        </h3>
+                        <p>The default URL for Zabbix UI when using Apache web server is http://host/zabbix</p>
+                    </div>
+                </div>
+
+                <div class = "Section">
+                    <div>
+                        <span class = "number">3</span>
+                        <span class ="title">Start using Zabbix</span>
+                        <p>Read in documentation: <span style = "color: #0275b8" class = "hover_underline">Quickstart guide</span></p>
+                        <ul class = "video-square">
+                            <li>
+                                <a href ="https://www.youtube.com/embed/87CdcPyBTr4?autoplay=1"><img src = "https://i.ytimg.com/vi/87CdcPyBTr4/mqdefault.jpg"></a>
+                                <div class = "hint">Zabbix server installation explained</div>
+                            </li>
+                            <li>
+                                <a href ="https://www.youtube.com/embed/p5XeBOOc7p8?autoplay=1"><img src = "https://i.ytimg.com/vi/p5XeBOOc7p8/mqdefault.jpg"></a>
+                                <div class = "hint">Zabbix basic concepts</div>
+                            </li>
+                            <li>
+                                <a href ="https://www.youtube.com/embed/RGv6CWYrXAU?autoplay=1"><img src = "https://i.ytimg.com/vi/RGv6CWYrXAU/mqdefault.jpg"></a>
+                                <div class = "hint">Zabbix basic concepts, part II</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id = "help">
+            <div class = "center">
+                <div class = "help">
+                    <h2>Need help from Zabbix team?</h2>
+                    <ul class = "helplist">
+                        <li>
+                            <a><img src = "https://assets.zabbix.com/img/tmp/services_consulting_need_help.svg" style = "width:100px;"></a>
+                            <div class = "helpheader">Consulting</div>
+                            <div class = "details">Get assistance in better understanding the benefits and potential from using Zabbix</div>
+                        </li>
+                        <li>
+                            <a><img src = "https://assets.zabbix.com/img/tmp/support_need_help.svg" style = "width:100px;"></a>
+                            <div class = "helpheader">Technical Support</div>
+                            <div class = "details">Get access to the team of Zabbix experts that know every little bit of the source code</div>
+                        </li>
+                        <li>
+                            <a><img src = "https://assets.zabbix.com/img/tmp/training_need_help-big.svg" style = "width:100px;"></a>
+                            <div class = "helpheader">Training</div>
+                            <div class = "details">Get theoretical and practical knowledge in 5 days in many local languages</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id = "footer">
+            <div class ="center">
+                <div class = "footer">
+                    <div class = "phone">
+                        <ul class = "contact">
+                            <li>
+                                <a>USA</a>
+                                <div class = "number">+1 877-4-ZABBIX</div>
+                            </li>
+                            <li>
+                                <a>EUROPE</a>
+                                <div class = "number">+371 6778-4742</div>
+                            </li>
+                            <li>
+                                <a>JAPAN</a>
+                                <div class = "number">+81 3-4405-7338</div>
+                            </li>
+                            <li>
+                                <a>CHINA</a>
+                                <div class = "number">+86 021-6978-6188</div>
+                            </li>
+                            <li>
+                                <a>ARGENTINA</a>
+                                <div class = "number">+54 11 3989-4060</div>
+                            </li>
+                            <li>
+                                <a>BRAZIL</a>
+                                <div class = "number">+55 11 4210-5104</div>
+                            </li>
+                            <li>
+                                <a>CHILE</a>
+                                <div class = "number">+56 44 890 9410</div>
+                            </li>
+                            <li>
+                                <a>COLUMBIA</a>
+                                <div class = "number">+57 1 3819310</div>
+                            </li>
+                            <li>
+                                <a>MEXICO</a>
+                                <div class = "number">+52 55 8526 26064</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class = "buttons">
+                        <a class = "button hover_button">Find a local partner</a>
+                        <a class = "button hover_button">Contact us</a>
+                    </div>
+                    <div class = "shortcuts">
+                        <ul class = "shortcut-section">
+                            <li>
+                                <ul class = "shortcut">
+                                    <li><a class = "shortcut-header hover_text">PRODUCT</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Features</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">What's new in Zabbix 6.4</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Screenshots</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">System requirements</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Life cycle & Release Policy</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">License</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Documentation</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Roadmap</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class = "shortcut">
+                                    <li><a class = "shortcut-header hover_text">SOLUTIONS</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">By Topic</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">By Industry</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">For Enterprises</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Case studies</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Customers and Users</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Integrations & Templates</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class = "shortcut">
+                                    <li><a class = "shortcut-header hover_text">SERVICES</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Support</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Consulting</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Turn-Key Solution</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Template building</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Upgrade</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Development</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Remote troubleshooting</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Integration</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class = "shortcut">
+                                    <li><a class = "shortcut-header hover_text">TRAINING</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Certified User</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Certified Specialist</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Certified Professional</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Certified Expert</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Testimonial</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Training FAQ</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Application form</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Webinars</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class = "shortcut">
+                                    <li><a class = "shortcut-header hover_text">PARTNERS</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Partner Program</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Become a Partner</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Strategic Partners</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Distributors</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Map of Partners</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class = "shortcut">
+                                    <li><a class = "shortcut-header hover_text">COMMUNITY</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Events</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Forum</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Blog</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Bugs and Feature Requests</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Developers</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Community templates</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Newsletters</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class = "shortcut">
+                                    <li><a class = "shortcut-header hover_text">COMPANY</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">About Us</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Career</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Contacts</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Press Releases</a></li>
+                                    <li><a class = "shortcut-sublist hover_text">Trademark</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "subscribe hover_email">
+            <div class = "center">
+                <div class = "subscribe-form">
+                    <div class = "emails">
+                        <label>Join 30,000+ Zabbix news readers</label>
+                        <div class = "oneinput">
+                            <input type="text" name="email" autocomplete="off" placeholder="Enter your email">
+                            <button type="submit" class="subscribe_newsletter">
+                                <i class="fa-sharp fa-solid fa-arrow-turn-down-left fa-flip-horizontal fa-2xs" style="color: #848487;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id = "footer">
+            <div class = "center">
+                <div class = "footer">
+                    <ul class = "trademark">
+                        <li><a>2001-2023 by Zabbix LLC. All rights reserved.</a></li>
+                        <li>
+                            <ul class = "trademark" style ="margin-right:30px;">
+                                <li><a class="social social-twitter hover_icon" href="https://twitter.com/zabbix" rel="noreferer noopener" target="_blank"></a></li>
+                                <li><a class="social social-facebook hover_icon" href="https://www.facebook.com/zabbix" rel="noreferer noopener" target="_blank"></a></li>
+                                <li><a class="social social-reddit hover_icon" href="https://www.reddit.com/r/zabbix/" rel="noreferer noopener" target="_blank"></a></li>
+                                <li><a class="social social-linkedin hover_icon" href="https://www.linkedin.com/company/zabbix" rel="noreferer noopener" target="_blank"></a></li>
+                                <li><a class="social social-youtube hover_icon" href="https://www.youtube.com/user/ZabbixSIA/videos" rel="noreferer noopener" target="_blank"></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class = "trademark">
+                                <li><a class = "hover_text">Privacy Policy</a></li>
+                                <li><a class = "hover_text">Trademark Policy</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
